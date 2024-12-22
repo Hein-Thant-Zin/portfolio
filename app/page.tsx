@@ -1,8 +1,8 @@
 import { Introduction } from "../components/Introduction";
-import { Skills } from "../components/Skills";
 import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
 import { FloatingNavbar } from "@/components/FloatingNavBar";
+import SkillProgress from "@/components/SkillProgress";
 
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
         id="about"
         className="w-full min-h-screen flex items-center justify-center"
       >
-        <Skills />
+        <SkillProgress />
       </section>
       <section
         id="projects"
