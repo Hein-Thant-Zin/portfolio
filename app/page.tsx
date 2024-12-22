@@ -7,7 +7,7 @@ import { FloatingNavbar } from "@/components/FloatingNavBar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between relative bg-gray-900 text-white dark">
+    <main className="flex min-h-screen flex-col items-center justify-between relative">
       <FloatingNavbar />
       <section
         id="home"
@@ -15,6 +15,7 @@ export default function Home() {
       >
         <Introduction />
       </section>
+
       <section
         id="about"
         className="w-full min-h-screen flex items-center justify-center"

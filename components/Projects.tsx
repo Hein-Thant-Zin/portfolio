@@ -48,9 +48,9 @@ export function Projects() {
   const [ref, isInView] = useInView({ threshold: 0.2 });
 
   return (
-    <section id="projects" ref={ref} className="max-w-6xl mx-auto px-4 py-16">
-      <motion.h2 
-        className="text-4xl font-bold text-center mb-12 text-gray-100"
+    <section id="projects" ref={ref} className="max-w-7xl mx-auto px-8 py-24 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-900">
+      <motion.h2
+        className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 dark:from-purple-400 dark:to-pink-400"
         initial={{ opacity: 0, y: -20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
         transition={{ duration: 0.6 }}
@@ -62,10 +62,12 @@ export function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.8, delay: 0.2 }}
+        className="relative"
       >
-        <HoverEffect 
-          items={projects} 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" 
+        <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-teal-100 dark:from-rose-950/30 dark:to-teal-950/30 blur-3xl -z-10 rounded-3xl" />
+        <HoverEffect
+          items={projects}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 p-8 rounded-3xl backdrop-blur-sm bg-white/50 dark:bg-gray-900/50"
         />
       </motion.div>
     </section>

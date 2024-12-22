@@ -49,7 +49,7 @@ export function Skills() {
     >
       <TextGenerateEffect
         words="My Skills"
-        className="text-4xl font-bold mb-10 text-gray-100"
+        className="text-4xl font-bold text-centerrounded-xl mx-auto my-auto mb-12 text-gray-100"
       />
       <motion.div
         className="grid grid-cols-2 md:grid-cols-3 gap-8"
@@ -62,16 +62,18 @@ export function Skills() {
             key={skill.name}
             name={skill.name}
             icon={skill.icon}
-            description={skill.description}         />
+            description={skill.description}
+          />
         ))}
       </motion.div>
-          <motion.span 
-            className="text-sm text-gray-400 mt-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            (Click to flip)
-          </motion.span>
-        </div>  );
+      <motion.span
+        className="text-sm text-gray-400 mt-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        (Click to flip)
+      </motion.span>
+    </div>
+  );
 }
