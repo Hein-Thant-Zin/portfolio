@@ -45,10 +45,14 @@ const projects = [
 ];
 
 export function Projects() {
-  const [ref, isInView] = useInView({ threshold: 0.2 });
+  const [ref, isInView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <section id="projects" ref={ref} className="max-w-7xl mx-auto px-8 py-24 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-900">
+    <section
+      id="projects"
+      ref={ref}
+      className="max-w-7xl mx-auto px-8 py-24 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-900"
+    >
       <motion.h2
         className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 dark:from-purple-400 dark:to-pink-400"
         initial={{ opacity: 0, y: -20 }}
