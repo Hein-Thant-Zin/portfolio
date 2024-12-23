@@ -54,19 +54,13 @@ const events: TimelineEvent[] = [
     emoji: "💩",
   },
   {
-    year: 2022,
-    title: "First Full-time Developer Role",
+    year: 2023,
+    title: "Keep going",
     description:
-      "Joined a multinational tech company as a junior full-stack developer.",
+      "Learning and growing as a IT guy, exploring new technologies.",
     emoji: "🚀",
   },
-  {
-    year: 2023,
-    title: "Open Source Contributions",
-    description:
-      "Started contributing to open source projects and building a personal portfolio.",
-    emoji: "🌟",
-  },
+ 
 ];
 
 export const Timeline = () => {
@@ -87,7 +81,7 @@ export const Timeline = () => {
         {events.map((event, index) => (
           <motion.div
             key={event.year}
-            className={`mb-12 flex justify-${
+            className={`mb-8 flex justify-${
               index % 2 === 0 ? "start" : "end"
             } items-center w-full`}
             initial={{ opacity: 0, y: 50 }}
