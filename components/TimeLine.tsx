@@ -53,6 +53,13 @@ const events: TimelineEvent[] = [
       "Started learning web development at Code Lab, working on web development projects using HTML, CSS, JavaScript and Laravel.",
     emoji: "👨‍💻",
   },
+  {
+    year: 2023,
+    title: "Got first job",
+    description:
+      "Started working as associate IT at a local Microfinance Company that use internal laravel web application.",
+    emoji: "💼",
+  },
 
   {
     year: 2024,
