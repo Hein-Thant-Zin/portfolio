@@ -27,9 +27,9 @@ const events: TimelineEvent[] = [
   },
   {
     year: 2016,
-    title: "High School Graduation",
+    title: "Finished High School",
     description:
-      "Graduated high school with honors, focusing on science and mathematics.",
+      "Finished high school with two degrees, Physics and Chemistry.",
     emoji: "🎓",
   },
   {
@@ -39,28 +39,28 @@ const events: TimelineEvent[] = [
       "Began studying Information Technology at Technological University Meikhtila in Myanmar.",
     emoji: "🏛️",
   },
-  {
-    year: 2019,
-    title: "First Coding Bootcamp",
-    description:
-      "Covid started and learning web development in home, working on web development projects.",
-    emoji: "👨‍💻",
-  },
+
   {
     year: 2021,
     title: "Shit happened",
-    description:
-      "And you know the rest.",
+    description: "And you know the rest.",
     emoji: "💩",
   },
   {
-    year: 2023,
-    title: "Keep going",
+    year: 2022,
+    title: "First Coding Bootcamp",
     description:
-      "Learning and growing as a IT guy, exploring new technologies.",
+      "Started learning web development at Code Lab, working on web development projects using HTML, CSS, JavaScript and Laravel.",
+    emoji: "👨‍💻",
+  },
+
+  {
+    year: 2024,
+    title: "Learning Reactjs and Nextjs",
+    description:
+      "Started learning Reactjs and Nextjs, and building projects using these technologies at Creathit.",
     emoji: "🚀",
   },
- 
 ];
 
 export const Timeline = () => {
