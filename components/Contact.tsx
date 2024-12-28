@@ -94,9 +94,9 @@ export function Contact() {
             </p>
           )}
         </form>
+     
       </div>
       <BackgroundBeams />
     </div>
   );
 }
-  

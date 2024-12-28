@@ -1,9 +1,11 @@
+'use client'
 import { Introduction } from "../components/Introduction";
 import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
 import { FloatingNavbar } from "@/components/FloatingNavBar";
 import SkillProgress from "@/components/SkillProgress";
 import { Timeline } from "@/components/TimeLine";
+import BackToTop from "@/components/BackToTop";
 
 
 export default function Home() {
@@ -39,6 +41,10 @@ export default function Home() {
         className="w-full min-h-screen flex items-center justify-center"
       >
         <Contact />
+        
+      </section>
+      <section>
+      <BackToTop />
       </section>
     </main>
   );
