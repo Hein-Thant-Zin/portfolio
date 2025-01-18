@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "Shwe Nadi",
-    description: "Local Potato Chips Brand",
+    description: "Local Potato Chips Brand with E-commerce",
     link: "https://shwenadi.vercel.app",
     target: "_blank",
     rel: "noopener noreferrer",
